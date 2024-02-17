@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Git') {
             steps {
-                git 'https://github.com/sambit417/SPE_MINIPROJECT.git'
+                echo "hello"
             }
         }
         stage('Build Code') {
