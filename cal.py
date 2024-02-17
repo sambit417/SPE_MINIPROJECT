@@ -3,20 +3,16 @@ import sys
 import math
 
 def square_root(num):
-    result = math.sqrt(num)
-    print("Square root of", num, "is:", result)
+    return math.sqrt(num)
 
 def factorial(num):
-    result = math.factorial(num)
-    print("Factorial of", num, "is:", result)
+    return math.factorial(num)
 
 def natural_logarithm(num):
-    result = math.log(num, math.e)
-    print("Natural logarithm of", num, "is:", result)
+    return math.log(num, math.e)
 
 def power_function(base, exponent):
-    result = math.pow(base, exponent)
-    print(base, "raised to the power", exponent, "is:", result)
+    return math.pow(base, exponent)
 
 def main():
     if len(sys.argv) < 2:
