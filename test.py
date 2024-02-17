@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import unittest
 from calculator import square_root, factorial, natural_logarithm, power_function
 
@@ -22,5 +23,5 @@ class TestCalculator(unittest.TestCase):
         self.assertAlmostEqual(power_function(5, 0), 1)
         self.assertAlmostEqual(power_function(10, -2), 0.01)
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     unittest.main()
