@@ -18,5 +18,11 @@ pipeline {
                 sh "./test.py"
             }
         }
-    } 
+     stage('Build Docker'){
+             steps{
+              docker.build('calculator','.')
+        }
+      }
+    }
+ 
 }
