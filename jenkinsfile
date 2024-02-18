@@ -20,7 +20,9 @@ pipeline {
         }
      stage('Build Docker'){
              steps{
+               script{
               docker.build('calculator','.')
+              
         }
       }
     }
