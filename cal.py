@@ -3,6 +3,8 @@ import sys
 import math
 
 def square_root(num):
+    result=math.sqrt(num)
+    print(result)
     return math.sqrt(num)
 
 def factorial(num):
