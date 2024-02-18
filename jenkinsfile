@@ -40,7 +40,7 @@ pipeline {
             steps{
                script{
                      ansiblePlaybook{
-                             playbook:'deploy.yml'
+                             playbook:'deploy.yml',
                              inventory:'inventory'
                        }
                  }
