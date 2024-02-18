@@ -1,4 +1,8 @@
-FROM ubuntu:latest
-copy cal.py /app/cal.py
-copy test.py /app/test.py
+
+FROM python:3.9-slim
+WORKDIR /app
+COPY cal.py .
+COPY test.py .
+CMD ["python", "cal.py"]
+
 
