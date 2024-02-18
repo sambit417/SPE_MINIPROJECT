@@ -29,8 +29,10 @@ pipeline {
      stage('Docker push'){
             steps{
               script{
+                  docker.withRegistry('','DockerHubCred'){
                   sh 'docker tag calculator sambit417/calculator'
                   sh 'docker push sambit417/calculator'
+                  }
                }
             }
          }
