@@ -22,13 +22,13 @@ def power_function(base, exponent):
     return result
 
 def main():
-    print("Choose an operation:")
-    print("1. Square Root")
-    print("2. Factorial")
-    print("3. Natural Logarithm")
-    print("4. Power Function")
+    print("Choose any of these options 1/2/3/4 to calculate:")
+    print("1. Square Root of a number")
+    print("2. Factorial of a number")
+    print("3. Natural Logarithm of a number")
+    print("4. Power Function of a number")
 
-    choice = int(input("Enter your choice (1/2/3/4): "))
+    choice = int(input("Enter your choice")
 
     if choice == 1:
         num = float(input("Enter a number: "))
