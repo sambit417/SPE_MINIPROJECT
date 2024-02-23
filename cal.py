@@ -28,7 +28,7 @@ def main():
     print("3. Natural Logarithm of a number")
     print("4. Power Function of a number")
 
-    choice = int(input("Enter your choice")
+    choice = int(input("Enter your choice"))
 
     if choice == 1:
         num = float(input("Enter a number: "))
