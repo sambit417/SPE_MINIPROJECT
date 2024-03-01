@@ -1,10 +1,13 @@
 //12345678
 pipeline { 
     agent any
+    environment {
+        GITHUB_REPO_URL = 'https://github.com/sambit417/SPE_MINIPROJECT.git'
+    }
     stages {
         stage('Clone Git') {
             steps {
-                git 'https://github.com/sambit417/SPE_MINIPROJECT.git'
+                git branch: 'main', url: "${GITHUB_REPO_URL}"
             }
         }
         stage('Build Code') {
