@@ -32,7 +32,10 @@ def main():
 
     if choice == 1:
         num = float(input("Enter a number: "))
-        square_root(num)
+        if num<0:
+            print ("invalid number")
+        else:
+            square_root(num)
     elif choice == 2:
         num = int(input("Enter a number: "))
         factorial(num)
