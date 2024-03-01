@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import unittest
-from cal import square_root, factorial, natural_logarithm, power_function
+from cal import square_root, factorial, natural_logarithm, power_function,sum1
 
 class TestCalculator(unittest.TestCase):
 
@@ -22,6 +22,11 @@ class TestCalculator(unittest.TestCase):
         self.assertAlmostEqual(power_function(2, 3), 8)
         self.assertAlmostEqual(power_function(5, 0), 1)
         self.assertAlmostEqual(power_function(10, -2), 0.01)
+    def test_sum1(self):
+        self.assertAlmostEqual(sum1(2, 3), 5)
+        self.assertAlmostEqual(sum1(5, 0), 5)
+        self.assertAlmostEqual(sum1(10, -2), 8)
+
 
 if __name__ == '__main__':
     unittest.main()

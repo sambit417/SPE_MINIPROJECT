@@ -20,6 +20,8 @@ def power_function(base, exponent):
     result = math.pow(base, exponent)
     print(result)
     return result
+def sum1(num1,num2):
+    return num1+num2
 
 def main():
     print("Choose any of these options 1/2/3/4 to calculate:")
@@ -27,6 +29,8 @@ def main():
     print("2. Factorial of a number")
     print("3. Natural Logarithm of a number")
     print("4. Power Function of a number")
+    print("5. add number")
+    
 
     choice = int(input("Enter your choice"))
 
@@ -46,6 +50,10 @@ def main():
         base = float(input("Enter the base: "))
         exponent = float(input("Enter the exponent: "))
         power_function(base, exponent)
+    elif choice == 5:
+        num1 = int(input("Enter a number: "))
+        num2 = int(input("Enter a number: "))
+        print(sum1(num1,num2))
     else:
         print("Invalid choice")
 
