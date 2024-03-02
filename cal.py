@@ -41,7 +41,10 @@ def main():
         else:
             square_root(num)
     elif choice == 2:
-        num = int(input("Enter a number: "))
+        if num<0:
+            print("number is negative")
+        else:
+            num = int(input("Enter a number: "))
         factorial(num)
     elif choice == 3:
         num = float(input("Enter a number: "))
